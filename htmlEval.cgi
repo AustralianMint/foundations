@@ -1,11 +1,12 @@
- #!/usr/bin/python3.6
-# -*- coding: UTF-8 -*-
+#!/usr/bin/python
+import cgi
 
-# enable debugging
-import cgitb
-cgitb.enable()
-
-print("Content-Type: text/plain;charset=utf-8")
-print()
-
-print("Hello World!")
+formData = cgi.fieldStorage()
+fav_color = formData.getvalue(fav-color)
+print("""
+<html>
+    <body>
+        <p>This is some html i'd like to be printed</p>
+    </body>
+</html>
+""")
