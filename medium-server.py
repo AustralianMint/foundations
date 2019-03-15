@@ -12,7 +12,7 @@ handler = http.server.CGIHTTPRequestHandler
 handler.cgi_directories = ["/scripts"]
 
 # define the server using the handler
-PORT = 8000
+PORT = 8002
 httpd = socketserver.TCPServer(("localhost", PORT), handler)
 
 # Set variables which the CGIHTTPRequestHandler expects
