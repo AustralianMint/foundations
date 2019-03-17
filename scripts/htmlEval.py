@@ -18,14 +18,18 @@ v_name = form.getvalue('fav-color')
 print("""
 <html>
 <style>
+    h1 {
+    font-family: Trebuchet MS;
+    color: white;
+    background-color: black;
+    }
     p {
     color: red;
     }
 </style>
 <body>
-<p>
-Thanks
-</p>
+<h1>Hurraaahh!!</h1>
+<p>Awesome, I like %s as well</p>
 </body>
 </html>
-""")
+""" % v_name)
