@@ -12,15 +12,20 @@ form = cgi.FieldStorage()
 
 # get an input filed from the form called 'name'
 # and assign it's value to a local variable called v_name
-v_name = form.getvalue('name')
+v_name = form.getvalue('fav-color')
 
 # send an html response.
-return """
+print("""
 <html>
+<style>
+    p {
+    color: red;
+    }
+</style>
 <body>
 <p>
-Thanks, %s
+Thanks
 </p>
 </body>
 </html>
-""" % v_name
+""")
