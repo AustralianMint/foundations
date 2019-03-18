@@ -1,4 +1,4 @@
-##Runs through given CSV file and checks if color is includedself.
+##Runs through given CSV file and prints out all collumns with their value.
 import csv
 fav_color = str(input("Enter your fav color: "))
 
@@ -16,5 +16,5 @@ with open('colors.csv') as csv_file:
             print("NAME1: {}, NAME2: {}, NAME3: {}".format(row[0], row[1], row[3]))
             line_count += 1
 
-    #End with totat lines.
+    #End with totat lines printed.
     print("{} lines printed.".format(line_count))
