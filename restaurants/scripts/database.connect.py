@@ -27,7 +27,6 @@ db_cursor.execute("SELECT NAME FROM restaurants")
 # this will be a list of tuples, where each tuple represents a row in the table
 list_restaurants = db_cursor.fetchall()
 
-# print("Content-Type: text/html")
 print("""
 <html>
   <head>
@@ -36,11 +35,20 @@ print("""
   </head>
   <body>
     <h1>Here are the Re$taurants</h1>
-    {}
+    <table>
+      <tr>
+        <th>Restaurant<th>
+        <th>Neighborhood</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
     <p>I also like {}</p> 
   </body>
 </html>
-""".format(list_restaurants, fav_restaurant_name))
+""".format(fav_restaurant_name))
 
 # print("list_restaurants contents:")
 # print(list_restaurants)
