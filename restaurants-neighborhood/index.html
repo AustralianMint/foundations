@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: rgb(255,148,143);
+        border: 2px solid rgb(254, 249, 242);
+        padding: 20px;
+        font-size: 2.5em;
+        text-align: center;
+      }
+      h2 {
+        color: rgb(251,163,59);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+      }
+      p {
+        font-weight: bold;
+        text-align: center;
+      }      
+    </style>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <h2>These are the famous restaurants!</h2>
+
+    <form action="scripts/database.connect.py" method="POST">
+        <p>Select an area:</p>
+        <fieldset>
+            <input type="radio" name="neighborhood" value="Kreuzberg">Kreuzberg<br>
+            <input type="radio" name="neighborhood" value="Wedding">Wedding<br>
+            <input type="radio" name="neighborhood" value="Neuköln">Neuköln<br>
+            <input type="radio" name="neighborhood" value="Spandau">Spandau<br>
+            <br><input type="submit" value="List Restaurant"></input>
+          </fieldset>
+        
+    </form>
+
+  </body>
+</html>
